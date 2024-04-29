@@ -17,11 +17,9 @@ step-1: start.
 
 ## Program:
 ```
-/*
 Program to implement the SVM For Spam Mail Detection..
-Developed by: S JAIGANESH
-RegisterNumber:  212222240037
-
+Developed by: VIKAASH K S
+RegisterNumber:  212223240179
 import pandas as pd
 data=pd.read_csv("/content/spam.csv",encoding="Windows-1252")
 data.head()
@@ -29,6 +27,8 @@ data.info()
 data.isnull().sum()
 x=data["v1"].values
 y=data["v2"].values
+```
+```
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=0)
 from sklearn.feature_extraction.text import CountVectorizer
